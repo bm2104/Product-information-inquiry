@@ -3,7 +3,7 @@ import streamlit as st
 import gspread
 from 제품_자재_조회_함수 import get_Month, get_Year, get_Mdata, data_I_search, data_M_search
 
-credentials = st.secrets["gcp_service_account"]
+#credentials = st.secrets["gcp_service_account"]
 
 st.title('제품 정보 조회 (2018/06 ~)')
 ''
@@ -35,3 +35,4 @@ if st.button("조회하기") and serial_input:
 
     except Exception as e:
         st.error(f"에러 발생: {e}")
+
